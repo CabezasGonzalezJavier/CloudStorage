@@ -1,61 +1,12 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        style="?android:attr/buttonBarStyle"
-        android:layout_width="fill_parent"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:onClick="uploadClick"
+        android:text="@string/activity_main_upload"/>
 
-        <Button
-            android:id="@+id/OnlineShopping"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight=".3"
-            android:text="@string/onlineShopping"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/MyAccount"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight=".3"
-            android:text="@string/myAccount"
-            android:textSize="12sp" />
-
-        <Button
-            android:id="@+id/CheckIn"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight=".3"
-            android:onClick="onRetrievePlaces"
-            android:text="@string/checkIn"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dip"
-        android:layout_weight="0.45"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/PlacesListLabel"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingEnd="3sp"
-            android:paddingStart="3sp"
-            android:text="@string/retrievingPlaces" />
-
-        <ListView
-            android:id="@+id/PlacesList"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
