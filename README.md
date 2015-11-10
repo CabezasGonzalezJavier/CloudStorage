@@ -2,8 +2,10 @@
   
 
     - This project:
-        - MVP.
-        - Cloud Storage. 
+       This library provides 1 line access to common Google Cloud Storage functions. It also provides examples of 
+       accessing Google Cloud Storage via the Google APIs Client Library for Java (see the source).
+       To get started, you'll need to enable Google Cloud Storage on a project and enable authentication via a  
+       Service Account. 
         
       
   
